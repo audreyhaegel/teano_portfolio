@@ -1,157 +1,213 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Teano Glavieux-Rodrigues — Portfolio</title>
-  <meta name="description" content="Engineering student in Materials & Sustainability. Window cleaning robot, thermal engineering internship, and video production." />
+  <title>Téano Glavieux-Rodrigues — Portfolio</title>
+  <meta name="description" content="Portfolio — Engineering, Thermal Design, Window Cleaning Robot, Video Production." />
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body id="top">
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Back to top">
-        <img class="avatar" src="assets/profil.jpg" alt="Portrait" />
-        <div class="brand-text">
-          <div class="brand-name">Teano Glavieux-Rodrigues</div>
-          <div class="brand-tag">Engineering • Materials • Sustainability</div>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top">
+        <img src="assets/profil.jpg" alt="Portrait" class="logo__img">
+        <div class="logo__text">
+          <div class="logo__name">Téano Glavieux-Rodrigues</div>
+          <div class="logo__sub">Engineering • Materials • Sustainability</div>
         </div>
       </a>
 
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="nav" aria-label="Primary">
+      <nav class="nav">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#gallery">Gallery</a>
-        <a class="cta" href="#contact">Contact</a>
+        <a class="nav__cta" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="top">
+    <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
+      <div class="container hero__grid">
+        <div class="hero__left">
           <h1>Portfolio</h1>
           <p class="lead">
-            Engineering student focused on materials & sustainable development, with hands-on industrial projects and a strong field mindset.
+            Engineering student focused on materials & sustainable development.
+            I build practical projects (prototype → test → iterate) and I also develop a video production project.
           </p>
 
-          <div class="about-buttons">
-            <a class="btn" href="assets/CV%20ENG%20Teano%20GLAVIEUX-RODRIGUES.pdf" target="_blank" rel="noopener">Download CV</a>
-            <a class="btn btn-outline" href="assets/Decathlon%20Cover%20letter%20GLAVIEUX%20RODRIGUES%20Teano.pdf" target="_blank" rel="noopener">Cover Letter</a>
+          <div class="btns">
+            <a class="btn" href="assets/CV%20ENG%20Teano%20GLAVIEUX-RODRIGUES.pdf" target="_blank" rel="noopener">
+              Download CV
+            </a>
+            <a class="btn btn--ghost" href="assets/Decathlon%20Cover%20letter%20GLAVIEUX%20RODRIGUES%20Teano.pdf" target="_blank" rel="noopener">
+              Cover letter
+            </a>
+            <a class="btn btn--ghost" href="https://www.youtube.com/watch?v=0K7Gdd7Vcj0" target="_blank" rel="noopener">
+              Video (YouTube)
+            </a>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Lean / industrial improvement</span>
+            <span class="chip">Thermal design office</span>
+            <span class="chip">Prototyping & testing</span>
+            <span class="chip">Outdoor / storytelling</span>
           </div>
         </div>
 
-        <div class="card hero-card">
-          <h3>Quick snapshot</h3>
-          <ul class="meta">
-            <li><strong>Focus:</strong> materials, sustainability, process improvement</li>
-            <li><strong>Approach:</strong> practical engineering, prototyping, testing</li>
-            <li><strong>Outside work:</strong> alpinism, climbing, MTB & video</li>
-          </ul>
+        <div class="hero__right">
+          <div class="card card--media">
+            <img src="assets/ridge_bw.jpg" alt="Mountain ridge" class="card__img">
+            <div class="card__overlay">
+              <div class="card__title">Field mindset</div>
+              <div class="card__text">Reliable execution • teamwork • real-world constraints</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- ABOUT -->
+    <section class="section" id="about">
       <div class="container">
-        <h2>About</h2>
-        <p>
-          I’m an engineering student in <strong>Materials & Sustainable Development</strong>. I like projects where I can build, test, and improve real systems—whether it’s an industrial process, a prototype, or a technical workflow. Outside engineering, I’m deeply into outdoor sports and visual storytelling.
-        </p>
+        <div class="section__head">
+          <h2>About</h2>
+          <p class="muted">
+            Short, clear, and professional.
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="p">
+            I’m an engineering student in <strong>Materials & Sustainable Development</strong>.
+            I like projects where I can <strong>design, build, test, and improve</strong> real systems.
+            Outside engineering, I’m deeply into outdoor sports and <strong>video production</strong>.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="section alt">
+    <!-- PROJECTS -->
+    <section class="section section--alt" id="projects">
       <div class="container">
-        <h2>Projects</h2>
+        <div class="section__head">
+          <h2>Projects</h2>
+          <p class="muted">Three core topics you asked for.</p>
+        </div>
 
-        <div class="cards">
+        <div class="grid">
           <article class="card">
             <h3>Window Cleaning Robot</h3>
-            <p>
-              Design of an autonomous window-cleaning robot with a focus on safe adhesion, stable motion on glass, and efficient cleaning.
-              This project trained me to translate needs into a clear architecture, prototype quickly, and validate choices through testing.
+            <p class="p muted">
+              Design of an autonomous window-cleaning robot focusing on safe adhesion, stable motion on glass,
+              and efficient cleaning. This project strengthened my ability to translate needs into architecture,
+              prototype quickly, and validate choices with tests.
             </p>
           </article>
 
           <article class="card">
             <h3>Video Production (side project)</h3>
-            <p>
-              Alongside engineering, I develop a video production project: shooting, editing, and storytelling for outdoor and technical content.
-              Example on YouTube:
-              <a class="inline-link" href="https://www.youtube.com/watch?v=0K7Gdd7Vcj0" target="_blank" rel="noopener">watch video</a>.
+            <p class="p muted">
+              I develop a video production project: shooting, editing, and storytelling for outdoor and technical content.
+              Here’s an example:
+              <a class="link" href="https://www.youtube.com/watch?v=0K7Gdd7Vcj0" target="_blank" rel="noopener">YouTube link</a>.
             </p>
           </article>
-        </div>
-      </div>
-    </section>
 
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Experience</h2>
-
-        <div class="cards">
           <article class="card">
-            <h3>Thermal Engineering — Design Office Internship</h3>
-            <p>
-              Internship as an engineer in a thermal design office, working on studies and sizing related to building/energy performance.
-              I handled technical analyses, supported project documentation, and worked with real constraints (standards, timelines, client needs),
-              which strengthened my methodical engineering approach.
+            <h3>Outdoor & Expedition</h3>
+            <p class="p muted">
+              Alpinism, climbing, glacier environments and MTB: this builds a strong “field mindset” (planning, risk management,
+              teamwork, and decision-making under constraints).
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="section alt">
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
       <div class="container">
-        <h2>Gallery</h2>
+        <div class="section__head">
+          <h2>Experience</h2>
+          <p class="muted">Internship — thermal engineering design office.</p>
+        </div>
+
+        <article class="card">
+          <h3>Thermal Engineering — Design Office Internship</h3>
+          <p class="p muted">
+            Internship as an engineer in a thermal design office, working on studies and sizing related to building/energy performance.
+            I handled technical analyses, supported project documentation, and worked with real constraints (standards, timelines, client needs),
+            which strengthened my methodical engineering approach and deliverable quality.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section--alt" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <h2>Gallery</h2>
+          <p class="muted">Your renamed images (exact filenames).</p>
+        </div>
+
         <div class="gallery">
-          <img src="assets/climbwall.jpg" alt="Canyoning / climbing rope" loading="lazy" />
-          <img src="assets/glacier_line.jpg" alt="Glacier / ice scene" loading="lazy" />
-          <img src="assets/mtbb.jpg" alt="Mountain biking" loading="lazy" />
-          <img src="assets/ridge_bw.jpg" alt="Ridge in black and white" loading="lazy" />
-          <img src="assets/profil.jpg" alt="Portrait" loading="lazy" />
+          <figure class="shot"><img src="assets/climbwall.jpg" alt="climbwall"></figure>
+          <figure class="shot"><img src="assets/glacier_line.jpg" alt="glacier line"></figure>
+          <figure class="shot"><img src="assets/mtbb.jpg" alt="mtbb"></figure>
+          <figure class="shot"><img src="assets/profil.jpg" alt="profil"></figure>
+          <figure class="shot"><img src="assets/ridge_bw.jpg" alt="ridge bw"></figure>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- CONTACT -->
+    <section class="section" id="contact">
       <div class="container">
-        <h2>Contact</h2>
-        <div class="contact-card">
-          <p><strong>Email:</strong> <a class="inline-link" href="mailto:teano.glavieux-rodrigues@2026.icam.fr">teano.glavieux-rodrigues@2026.icam.fr</a></p>
-          <p><strong>Phone:</strong> <a class="inline-link" href="tel:+33631811882">+33 6 31 81 18 82</a></p>
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p class="muted">Simple, clean, clickable.</p>
+        </div>
+
+        <div class="contact">
+          <div class="card">
+            <p class="p"><strong>Email</strong><br>
+              <a class="link" href="mailto:teano.glavieux-rodrigues@2026.icam.fr">teano.glavieux-rodrigues@2026.icam.fr</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="p"><strong>Phone</strong><br>
+              <a class="link" href="tel:+33631811882">+33 6 31 81 18 82</a>
+            </p>
+          </div>
+
+          <div class="card">
+            <p class="p"><strong>Documents</strong><br>
+              <a class="link" href="assets/CV%20ENG%20Teano%20GLAVIEUX-RODRIGUES.pdf" target="_blank" rel="noopener">CV (PDF)</a><br>
+              <a class="link" href="assets/Decathlon%20Cover%20letter%20GLAVIEUX%20RODRIGUES%20Teano.pdf" target="_blank" rel="noopener">Cover letter (PDF)</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> Teano Glavieux-Rodrigues</div>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Téano Glavieux-Rodrigues</span>
+      <a class="link" href="#top">Back to top</a>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
   <script>
-    // Mobile menu
-    const btn = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.nav');
-    if (btn && nav) {
-      btn.addEventListener('click', () => {
-        const isOpen = nav.classList.toggle('open');
-        btn.setAttribute('aria-expanded', String(isOpen));
-      });
-    }
-    // Year
-    const y = document.getElementById('year');
-    if (y) y.textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
