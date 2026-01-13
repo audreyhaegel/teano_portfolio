@@ -5,14 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Téano Glavieux-Rodrigues — Portfolio</title>
   <meta name="description" content="Portfolio — Window Cleaning Robot, thermal engineering internship, and video production." />
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- IMPORTANT : ton CSS est dans /css/style.css -->
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <header class="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="#top">
-        <img class="brand__img" src="assets/profil.jpg" alt="Portrait" />
+        <img class="brand__img" src="./assets/profil.jpg" alt="Portrait">
         <div class="brand__text">
           <div class="brand__name">Téano Glavieux-Rodrigues</div>
           <div class="brand__meta">Engineering • Materials • Sustainability</div>
@@ -30,43 +32,32 @@
   </header>
 
   <main id="top">
-    <!-- HERO -->
     <section class="hero">
       <div class="container hero__inner">
-        <div class="hero__left">
+        <div>
           <h1>Portfolio</h1>
           <p class="lead">
-            Engineering student focused on materials & sustainable development. I like building practical systems,
-            testing them in real conditions, and improving them.
+            Engineering student focused on materials & sustainable development. Practical projects, testing, and real-world results.
           </p>
 
           <div class="buttons">
-            <a class="btn" href="assets/CV%20ENG%20Teano%20GLAVIEUX-RODRIGUES.pdf" target="_blank" rel="noopener">
-              Download CV
-            </a>
-            <a class="btn btn--ghost" href="assets/Decathlon%20Cover%20letter%20GLAVIEUX%20RODRIGUES%20Teano.pdf" target="_blank" rel="noopener">
-              Cover Letter
-            </a>
-            <a class="btn btn--ghost" href="https://www.youtube.com/watch?v=0K7Gdd7Vcj0" target="_blank" rel="noopener">
-              Video (YouTube)
-            </a>
+            <a class="btn" href="./assets/CV%20ENG%20Teano%20GLAVIEUX-RODRIGUES.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn--ghost" href="./assets/Decathlon%20Cover%20letter%20GLAVIEUX%20RODRIGUES%20Teano.pdf" target="_blank" rel="noopener">Cover Letter</a>
+            <a class="btn btn--ghost" href="https://www.youtube.com/watch?v=0K7Gdd7Vcj0" target="_blank" rel="noopener">Video (YouTube)</a>
           </div>
         </div>
 
-        <div class="hero__right">
-          <div class="mini-card">
-            <div class="mini-card__title">Quick snapshot</div>
-            <ul class="mini-list">
-              <li>Industrial mindset, Lean / improvement</li>
-              <li>Prototyping, field testing, iteration</li>
-              <li>Outdoor sports + visual storytelling</li>
-            </ul>
-          </div>
+        <div class="mini-card">
+          <div class="mini-card__title">Quick snapshot</div>
+          <ul class="mini-list">
+            <li>Lean / industrial improvement</li>
+            <li>Prototyping & testing</li>
+            <li>Outdoor sports + video</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container">
         <h2>About</h2>
@@ -77,7 +68,6 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="container">
         <h2>Projects</h2>
@@ -85,8 +75,8 @@
           <article class="card">
             <h3>Window Cleaning Robot</h3>
             <p class="text">
-              Design of an autonomous window-cleaning robot with a focus on safe adhesion, stable motion on glass, and efficient
-              cleaning. The project pushed me to structure needs, prototype quickly, and validate choices through tests.
+              Design of an autonomous window-cleaning robot focusing on safe adhesion, stable motion on glass, and efficient cleaning.
+              I structured needs, prototyped quickly, and validated choices through tests.
             </p>
           </article>
 
@@ -101,7 +91,6 @@
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section class="section" id="experience">
       <div class="container">
         <h2>Experience</h2>
@@ -109,27 +98,25 @@
           <h3>Internship — Thermal Engineering Design Office</h3>
           <p class="text">
             Internship as an engineer in a thermal design office, working on studies and sizing related to building/energy performance.
-            I contributed to technical analyses and project documentation while working with real constraints (standards, deadlines, client needs).
+            I contributed to technical analyses and project documentation with real constraints (standards, deadlines, client needs).
           </p>
         </article>
       </div>
     </section>
 
-    <!-- GALLERY -->
     <section class="section" id="gallery">
       <div class="container">
         <h2>Gallery</h2>
         <div class="gallery">
-          <figure class="shot"><img src="assets/climbwall.jpg" alt="climbwall" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/glacier_line.jpg" alt="glacier_line" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/mtbb.jpg" alt="mtbb" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/ridge_bw.jpg" alt="ridge_bw" loading="lazy"></figure>
-          <figure class="shot"><img src="assets/profil.jpg" alt="profil" loading="lazy"></figure>
+          <figure class="shot"><img src="./assets/climbwall.jpg" alt="climbwall" loading="lazy"></figure>
+          <figure class="shot"><img src="./assets/glacier_line.jpg" alt="glacier_line" loading="lazy"></figure>
+          <figure class="shot"><img src="./assets/mtbb.jpg" alt="mtbb" loading="lazy"></figure>
+          <figure class="shot"><img src="./assets/ridge_bw.jpg" alt="ridge_bw" loading="lazy"></figure>
+          <figure class="shot"><img src="./assets/profil.jpg" alt="profil" loading="lazy"></figure>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="container">
         <h2>Contact</h2>
@@ -154,9 +141,8 @@
     </footer>
   </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <!-- ton JS est à la racine -->
+  <script src="./script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
