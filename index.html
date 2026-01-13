@@ -4,24 +4,29 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Teano Glavieux-Rodrigues — Portfolio</title>
-  <meta name="description" content="Engineering student in Materials & Sustainability. Projects, outdoor sports, and practical engineering." />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="Engineering student in Materials & Sustainability. Window cleaning robot, thermal engineering internship, and video production." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body id="top">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top">
-        <img class="avatar" src="assets/profil.jpg" alt="Portrait of Teano Glavieux-Rodrigues" />
+      <a class="brand" href="#top" aria-label="Back to top">
+        <img class="avatar" src="assets/profil.jpg" alt="Portrait" />
         <div class="brand-text">
           <div class="brand-name">Teano Glavieux-Rodrigues</div>
-          <div class="brand-role">Engineering • Materials • Sustainability</div>
+          <div class="brand-tag">Engineering • Materials • Sustainability</div>
         </div>
       </a>
 
-      <nav class="nav">
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#gallery">Gallery</a>
         <a class="cta" href="#contact">Contact</a>
       </nav>
@@ -33,25 +38,23 @@
       <div class="container hero-grid">
         <div>
           <h1>Portfolio</h1>
-          <p>
-            Engineering student focused on materials & sustainability, with hands-on industrial projects and a strong field mindset.
+          <p class="lead">
+            Engineering student focused on materials & sustainable development, with hands-on industrial projects and a strong field mindset.
           </p>
-          <ul>
-            <li><strong>Location:</strong> France / Europe</li>
-            <li><strong>Looking for:</strong> 6-month internship abroad</li>
-            <li><strong>Interests:</strong> Product design, continuous improvement, outdoor sports</li>
-          </ul>
-        </div>
 
-        <div class="card">
-          <h3>Quick links</h3>
-          <p style="margin-top:0.5rem;margin-bottom:0.75rem;">
-            Download my CV and cover letter:
-          </p>
-          <div class="about-buttons" style="margin-top:0;">
+          <div class="about-buttons">
             <a class="btn" href="assets/CV%20ENG%20Teano%20GLAVIEUX-RODRIGUES.pdf" target="_blank" rel="noopener">Download CV</a>
             <a class="btn btn-outline" href="assets/Decathlon%20Cover%20letter%20GLAVIEUX%20RODRIGUES%20Teano.pdf" target="_blank" rel="noopener">Cover Letter</a>
           </div>
+        </div>
+
+        <div class="card hero-card">
+          <h3>Quick snapshot</h3>
+          <ul class="meta">
+            <li><strong>Focus:</strong> materials, sustainability, process improvement</li>
+            <li><strong>Approach:</strong> practical engineering, prototyping, testing</li>
+            <li><strong>Outside work:</strong> alpinism, climbing, MTB & video</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -60,55 +63,73 @@
       <div class="container">
         <h2>About</h2>
         <p>
-          Engineering student in materials & sustainability, focused on building practical solutions and improving industrial processes.
-          Outdoor sports enthusiast (alpinism, climbing, MTB) with a strong taste for fieldwork, teamwork, and reliable execution.
+          I’m an engineering student in <strong>Materials & Sustainable Development</strong>. I like projects where I can build, test, and improve real systems—whether it’s an industrial process, a prototype, or a technical workflow. Outside engineering, I’m deeply into outdoor sports and visual storytelling.
         </p>
-
-        <div class="about-buttons">
-          <a class="btn" href="assets/CV%20ENG%20Teano%20GLAVIEUX-RODRIGUES.pdf" target="_blank" rel="noopener">Download CV</a>
-          <a class="btn btn-outline" href="assets/Decathlon%20Cover%20letter%20GLAVIEUX%20RODRIGUES%20Teano.pdf" target="_blank" rel="noopener">Cover Letter</a>
-        </div>
       </div>
     </section>
 
     <section id="projects" class="section alt">
       <div class="container">
         <h2>Projects</h2>
+
         <div class="cards">
-          <div class="card">
-            <h3>Industrial / Lean</h3>
-            <p>Process improvement, 5S/standardization, tooling and workshop organization.</p>
-          </div>
-          <div class="card">
-            <h3>Engineering builds</h3>
-            <p>Hands-on prototyping, embedded systems, mechatronics, and real-world testing.</p>
-          </div>
-          <div class="card">
-            <h3>Creative</h3>
-            <p>Video production and storytelling applied to technical and outdoor projects.</p>
-          </div>
+          <article class="card">
+            <h3>Window Cleaning Robot</h3>
+            <p>
+              Design of an autonomous window-cleaning robot with a focus on safe adhesion, stable motion on glass, and efficient cleaning.
+              This project trained me to translate needs into a clear architecture, prototype quickly, and validate choices through testing.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Video Production (side project)</h3>
+            <p>
+              Alongside engineering, I develop a video production project: shooting, editing, and storytelling for outdoor and technical content.
+              Example on YouTube:
+              <a class="inline-link" href="https://www.youtube.com/watch?v=0K7Gdd7Vcj0" target="_blank" rel="noopener">watch video</a>.
+            </p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="gallery" class="section">
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Thermal Engineering — Design Office Internship</h3>
+            <p>
+              Internship as an engineer in a thermal design office, working on studies and sizing related to building/energy performance.
+              I handled technical analyses, supported project documentation, and worked with real constraints (standards, timelines, client needs),
+              which strengthened my methodical engineering approach.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section alt">
       <div class="container">
         <h2>Gallery</h2>
         <div class="gallery">
-          <img src="assets/climbwall.jpg" alt="Climbing / canyoning" />
-          <img src="assets/glacier_line.jpg" alt="Glacier / ice climbing" />
-          <img src="assets/mtbb.jpg" alt="Mountain biking" />
-          <img src="assets/profil.jpg" alt="Profile" />
-          <img src="assets/ridge_bw.jpg" alt="Alpine ridge" />
+          <img src="assets/climbwall.jpg" alt="Canyoning / climbing rope" loading="lazy" />
+          <img src="assets/glacier_line.jpg" alt="Glacier / ice scene" loading="lazy" />
+          <img src="assets/mtbb.jpg" alt="Mountain biking" loading="lazy" />
+          <img src="assets/ridge_bw.jpg" alt="Ridge in black and white" loading="lazy" />
+          <img src="assets/profil.jpg" alt="Portrait" loading="lazy" />
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section alt">
+    <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
-        <p>Email: teano.glavieux-rodrigues@2026.icam.fr</p>
-        <p>Phone: +33 6 31 81 18 82</p>
+        <div class="contact-card">
+          <p><strong>Email:</strong> <a class="inline-link" href="mailto:teano.glavieux-rodrigues@2026.icam.fr">teano.glavieux-rodrigues@2026.icam.fr</a></p>
+          <p><strong>Phone:</strong> <a class="inline-link" href="tel:+33631811882">+33 6 31 81 18 82</a></p>
+        </div>
       </div>
     </section>
   </main>
@@ -117,6 +138,20 @@
     <div class="container">© <span id="year"></span> Teano Glavieux-Rodrigues</div>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Mobile menu
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (btn && nav) {
+      btn.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+    // Year
+    const y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
